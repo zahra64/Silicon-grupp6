@@ -19,6 +19,7 @@
 
 
   --font: 'Manrope', system-ui, sans-serif;
+}
 
 
   /* design: Header & Navigation */
@@ -116,14 +117,36 @@ header .container {
 
 /* Dark Mode Switch */
 
-.dark-mode-toggle {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 12px;
-
+/* Dark Mode General Styling */
+body:has(#theme-toggle:checked) {
+ background-color: var(--gray-900) !important;
+ color: var(--white) !important;
+}
+/* Header & Nav */
+body:has(#theme-toggle:checked) header {
+ background-color: var(--gray-900);
+}
+body:has(#theme-toggle:checked) .logo-text,
+body:has(#theme-toggle:checked) .toggle-label {
+ color: var(--white);
+}
+body:has(#theme-toggle:checked) .main-nav .nav-link {
+ color: var(--gray-300);
+}
+/* Hero Section */
+body:has(#theme-toggle:checked) .hero {
+ background: var(--gray-900);
+}
+body:has(#theme-toggle:checked) .hero-title {
+ color: var(--white);
+}
+body:has(#theme-toggle:checked) .hero-text,
+body:has(#theme-toggle:checked) .discover-more {
+ color: var(--gray-300);
+}
+body:has(#theme-toggle:checked) .chevron-down {
+ background-color: var(--gray-800);
+ color: var(--white);
 }
 
 .toggle-label {
@@ -248,7 +271,205 @@ input:checked + .slider:before {
 
 }
  
+/* Hero Section Styling */
 
+.hero {
+
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+
+  padding: 60px 0 0 0;
+
+  overflow: hidden;
+
+  font-family: var(--font);
+
+}
+
+.hero .container {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+}
+
+
+.hero-content {
+
+  max-width: 520px;
+
+}
+
+.hero-title {
+
+  font-size: 56px;
+
+  font-weight: 800;
+
+  color: var(--gray-900);
+
+  line-height: 1.15;
+
+  margin-bottom: 24px;
+
+}
+
+.hero-text {
+
+  font-size: 18px;
+
+  color: var(--gray-700);
+
+  line-height: 1.6;
+
+  margin-bottom: 40px;
+
+}
+
+
+.download-buttons {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 40px;
+
+}
+
+.btn-download img {
+
+  height: 44px;
+
+  width: auto;
+
+  display: block;
+
+}
+
+
+.discover-more {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: var(--gray-700);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: color 0.2s ease;
+
+}
+
+.discover-more:hover {
+
+  color: var(--brand-primary);
+
+}
+
+.chevron-down {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 36px;
+
+  height: 36px;
+
+  border-radius: 50%;
+
+  background-color: var(--white);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  transform: rotate(90deg);
+
+  font-size: 12px;
+
+}
+
+
+.hero-images {
+
+  flex: 1;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+}
+
+.phones-img {
+
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+}
+
+
+body:has(#theme-toggle:checked) .hero {
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(11, 15, 25, 0) 100%);
+
+}
+
+body:has(#theme-toggle:checked) .hero-title {
+
+  color: var(--white);
+
+}
+
+body:has(#theme-toggle:checked) .hero-text,
+
+body:has(#theme-toggle:checked) .discover-more {
+
+  color: var(--gray-400);
+
+}
+
+body:has(#theme-toggle:checked) .chevron-down {
+
+  background-color: var(--gray-800);
+
+  color: var(--white);
+
+}
+.hero-images {
+ flex: 1;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+.hero-images svg {
+ width: 100%;
+ max-width: 500px; 
+ height: auto;
+ display: block;
+} 
   
  
-}
