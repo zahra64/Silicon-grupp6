@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
 
@@ -16,10 +17,40 @@
   --error: #EF4444;
   --brand-primary: #6366F1;
  
-
+  --container-padding: 1rem;
+  --section-spacing: 4rem;
 
   --font: 'Manrope', system-ui, sans-serif;
+}
 
-  
- 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+
+.container {
+    width: 100%;
+    padding-left:  1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
