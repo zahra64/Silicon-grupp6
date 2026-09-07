@@ -471,5 +471,90 @@ body:has(#theme-toggle:checked) .chevron-down {
  height: auto;
  display: block;
 } 
-  
+  /* Responsive Design (Mobile & Tablet) */
+
+@media (max-width: 992px) {
+
+    .hero .container {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .hero-content {
+
+        max-width: 100%;
+
+        padding-bottom: 30px;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 40px;
+
+    }
+
+    .store-buttons {
+
+        justify-content: center;
+
+    }
+
+    .discover-more {
+
+        justify-content: center;
+
+    }
+
+    .hero-images {
+
+        justify-content: center;
+
+        width: 100%;
+
+    }
+
+    .hero-images .img-back {
+
+        margin-right: -60px;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero-content h1 {
+
+        font-size: 32px;
+
+    }
+
+    .hero-content p {
+
+        font-size: 16px;
+
+    }
+
+    .store-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .btn-store {
+
+        width: 100%;
+
+        max-width: 200px;
+
+    }
+
+}
+ 
  
