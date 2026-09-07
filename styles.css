@@ -626,7 +626,7 @@ body:has(#theme-toggle:checked) .chevron-down {
   }
   .input-group {
     position: relative;
-    width: 1; 
+    width: 100%; 
   }
   .input-group input {
     width: 100%;
