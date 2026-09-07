@@ -15,8 +15,39 @@
   --warning: #FFBA08;
   --error: #EF4444;
   --brand-primary: #6366F1;
- 
 
+  --font: 'Manrope', system-ui, sans-serif;
+}
+  .phones-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+
+.how-does-it-work{
+  font-family: var(--font);
+background-color: var(--white);
+padding: 60px 0;
+text-align: center;
+
+}
+
+.how-does-it-work h2{ 
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+@media (max-width:768px) {
+.phones-container {
+  flex-direction: column;
+}
+}
+ 
+:root {
 
   --font: 'Manrope', system-ui, sans-serif;
 }
