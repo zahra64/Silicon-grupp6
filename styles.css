@@ -13,19 +13,21 @@
   --warning: #FFBA08;
   --error: #EF4444;
   --brand-primary: #6366F1;
- 
+
   --container-padding: 1rem;
   --section-spacing: 4rem;
  
   --font: 'Manrope', sans-serif;
 }
  
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
  
+
 body {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -40,6 +42,7 @@ body {
   height: 100vh;
 }
  
+
 .container {
   width: 100%;
   padding-left: 1rem;
@@ -48,6 +51,7 @@ body {
   margin-right: auto;
 }
  
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -74,6 +78,7 @@ body {
   }
 }
  
+
 /* Header Styles */
 header {
 padding: 1.25rem 0;
@@ -203,4 +208,27 @@ body:has(input[type="checkbox"]:checked) .main-nav a {
  
   cursor: pointer;
  
+
+}
+
+body:has(input[type="checkbox"]:checked) .logo,
+
+body:has(input[type="checkbox"]:checked) .dark-mode-toggle span {
+
+  color: #ffffff !important;
+
+}
+
+body:has(input[type="checkbox"]:checked) .main-nav a {
+
+  color: #bcc1d2 !important;
+
+}
+
+/* Make sure label is clickable */
+
+.dark-mode-toggle label {
+
+  cursor: pointer;
+
 }
