@@ -1,5 +1,4 @@
 :root {
-
   --gray-100: #F3F6FF;
   --gray-300: #E2E5F1;
   --gray-400: #D4D7E5;
@@ -14,44 +13,67 @@
   --warning: #FFBA08;
   --error: #EF4444;
   --brand-primary: #6366F1;
- 
+
   --container-padding: 1rem;
   --section-spacing: 4rem;
 
   --font: 'Manrope', sans-serif;
 }
 
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
 body {
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 .wrapper {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
-
 
 .container {
-    width: 100%;
-    padding-left:  1rem;
-    padding-right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
 /* Header Styles */
 header {
  padding: 1.25rem 0;
@@ -182,65 +204,3 @@ body:has(input[type="checkbox"]:checked) .main-nav a {
   cursor: pointer;
 
 }
- 
-
-
-body {
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-}
-
-
-.container {
-    width: 100%;
-    padding-left:  1rem;
-    padding-right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 576px) {
-    .container { 
-        max-width: 540px;
-     }
-}
-@media (min-width: 768px) {
-    .container { 
-        max-width: 720px; 
-    }
-}
-@media (min-width: 992px) {
-    .container {
-         max-width: 960px;
-         }
-}
-@media (min-width: 1200px) {
-    .container { 
-        max-width: 1140px; 
-    }
-}
-@media (min-width: 1400px) {
-    .container { 
-        max-width: 1320px; 
-    }
-}
-
-
-
