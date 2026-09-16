@@ -300,17 +300,17 @@ body:has(input[type="checkbox"]:checked) .main-nav a {
 
    position: absolute;
 
-   right: 160px;
+   right: 220px;
 
    bottom: 0px;
 
    width: 250px;
-  
+
 
    height: auto;
 
    z-index: 1;
-   padding-right: 20px;
+   padding-right: 0px;
 
 }
 
