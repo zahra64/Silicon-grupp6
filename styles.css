@@ -37,7 +37,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -191,14 +191,14 @@ body:has(input[type="checkbox"]:checked) {
 }
 
 .how-it-works {
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 .how-it-works h2 {
     font-family: "Manrope", sans-serif;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 800;
     color: #0B0F19;
     margin: bottom 24px;
@@ -239,6 +239,17 @@ body:has(input[type="checkbox"]:checked) {
     .desktop
      {   
      display: block;  }
+}
+body:has(input[type="checkbox"]:checked) #how {
+  background-color: var(--gray-900) !important;
+}
+
+body:has(input[type="checkbox"]:checked) #how h2,
+body:has(input[type="checkbox"]:checked) #how h3 {
+  color: var(--white) !important;
+}
+body:has(input[type="checkbox"]:checked) #how p {
+  color: var(--gray-400) !important;
 }
 
 /* ****************************Brands************************** */
@@ -292,10 +303,12 @@ body:has(input[type="checkbox"]:checked) {
 }
 
 
+
 #subscribe {
-  max-width: 1296px;
-  margin: 0 auto;
-  width: 100%;
+    width: 100%;
+  margin-top: 20px !important;
+  margin-bottom: 40px auto;
+
 }
 
 .subscribe-card {
@@ -303,7 +316,7 @@ body:has(input[type="checkbox"]:checked) {
   justify-content: space-between;
   align-items: center;
   background-color: #F3F6FF;
-  padding: 40px 60px;
+  padding: 40px;
   border-radius: 8px;
 }
 
@@ -400,3 +413,16 @@ body:has(input[type="checkbox"]:checked) {
   }
 }
 
+body:has(input[type="checkbox"]:checked) #subscribe .subscribe-card {
+  background-color: var(--gray-900) !important;
+  border: 1px solid var(--gray-800) !important;
+}
+
+body:has(input[type="checkbox"]:checked) #subscribe h4 {
+  color: var(--white) !important;
+}
+
+body:has(input[type="checkbox"]:checked) #subscribe input {
+  color: var(--white) !important;
+  background-color: transparent !important;
+}
