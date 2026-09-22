@@ -292,8 +292,6 @@ body:has(input[type="checkbox"]:checked) {
 }
 
 
-
-
 #subscribe {
   max-width: 1296px;
   margin: 0 auto;
