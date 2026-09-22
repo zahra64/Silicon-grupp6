@@ -290,3 +290,91 @@ body:has(input[type="checkbox"]:checked) {
         display: flex;
     }
 }
+
+/* **************************App features***************************** */
+
+
+
+.features {
+    text-align: center; 
+    padding-block: var(--section-spacing);
+
+    .iphone {
+        margin-top: 125px; 
+        display: none;
+    }
+
+    h2 {
+          font-size: 40px;
+          color: var(--gray-900);
+          margin-bottom: 12px;
+          font-weight: bold;
+      }
+
+      .text-feature {
+          color: var(--gray-600);
+          font-size: 18px;
+          line-height: 1.6;
+      }
+    .features-grid {
+        display: grid;
+         gap: 2rem;    
+        margin-top: 4rem; 
+    }
+    .feature-box {
+        display: flex;
+        text-align: start;
+        gap: 1rem;
+        align-items: flex-start;
+
+    }
+   .card-title {
+        font-size: 20px;
+        color: var(--gray-900);
+        margin-bottom: 5px;
+    }
+
+    .feature-box p {
+        color: var(--gray-700);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .icon-container {
+        background-color: var(--brand-soft);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        flex-shrink: 0;
+    }
+
+    @media (width > 768px) {
+        .features-grid{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem 3rem;
+        }
+    }
+
+    @media (width > 1200px) {
+        text-align: start;
+        .container {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+        .iphone {
+            display: block;
+
+        }
+        .app-features{
+            flex: 1;
+        }
+    }
+    @media (width > 1400px) {
+        text-align: start;
+        .container {
+            gap: 10rem;
+        }
+        
+    }
+
+}
