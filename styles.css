@@ -290,3 +290,115 @@ body:has(input[type="checkbox"]:checked) {
         display: flex;
     }
 }
+
+
+
+
+#subscribe {
+  max-width: 1296px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.subscribe-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F3F6FF;
+  padding: 40px 60px;
+  border-radius: 8px;
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 416px;
+}
+
+.card-left img {
+  width: 78px;
+  height: 78px;
+}
+
+.card-left h4 {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #0b0f19;
+  margin: 0;
+}
+
+.card-right {
+  display: flex;
+  align-items: center;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: 472px;
+  height: 52px;
+  padding: 0 16px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #D4D7E3;
+  border-right: none;
+  gap: 12px;
+}
+
+.card-right img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-right input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  background: transparent;
+}
+
+.card-right button {
+  background-color: #6366F1;
+  color: #ffffff;
+  border: none;
+  height: 52px;
+  padding: 0 32px;
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+  .subscribe-card {
+    flex-direction: column;
+    gap: 24px;
+    padding: 30px 20px;
+  }
+
+  .card-left {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-right {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .input-box {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #D4D7E3;
+  }
+
+  .card-right button {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
