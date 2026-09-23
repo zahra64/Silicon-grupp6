@@ -412,3 +412,40 @@ body {
     color: var(--gray-700);
     margin: 0;
 }
+@media (max-width: 900px) {
+    .app-features {
+        padding: 64px 0;
+    }
+
+    .af-row {
+        grid-template-columns: 1fr;
+        gap: 56px;
+    }
+
+    .af-row--reverse .af-visual {
+        order: 0;
+    }
+
+    .af-visual {
+        padding-bottom: 40px;
+    }
+
+    .af-text h2,
+    .af-features-grid {
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .af-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .af-card--send {
+        right: 0;
+    }
+
+    .af-visa-card {
+        left: 0;
+    }
+}
