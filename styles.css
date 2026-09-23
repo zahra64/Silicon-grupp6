@@ -37,7 +37,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -182,6 +182,7 @@ body:has(input[type="checkbox"]:checked) {
   color: #ffffff !important;
 
 }
+/* How does it work? */
 
 #how {
     background-color: #F3F6FF;
@@ -191,14 +192,14 @@ body:has(input[type="checkbox"]:checked) {
 }
 
 .how-it-works {
-    width: 100%;
+    width: 80%;
     text-align: center;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 .how-it-works h2 {
     font-family: "Manrope", sans-serif;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 800;
     color: #0B0F19;
     margin: bottom 24px;
@@ -239,6 +240,17 @@ body:has(input[type="checkbox"]:checked) {
     .desktop
      {   
      display: block;  }
+}
+body:has(input[type="checkbox"]:checked) #how {
+  background-color: var(--gray-900) !important;
+}
+
+body:has(input[type="checkbox"]:checked) #how h2,
+body:has(input[type="checkbox"]:checked) #how h3 {
+  color: var(--white) !important;
+}
+body:has(input[type="checkbox"]:checked) #how p {
+  color: var(--gray-400) !important;
 }
 
 /* ****************************Brands************************** */
@@ -291,6 +303,122 @@ body:has(input[type="checkbox"]:checked) {
     }
 }
 
+
+/* Subscribe */
+
+#subscribe {
+    width: 100%;
+  margin-top: 20px !important;
+  margin-bottom: 40px auto;
+
+}
+
+.subscribe-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F3F6FF;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 416px;
+}
+
+.card-left img {
+  width: 78px;
+  height: 78px;
+}
+
+.card-left h4 {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #0b0f19;
+  margin: 0;
+}
+
+.card-right {
+  display: flex;
+  align-items: center;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: 472px;
+  height: 52px;
+  padding: 0 16px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #D4D7E3;
+  border-right: none;
+  gap: 12px;
+}
+
+.card-right img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-right input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  background: transparent;
+}
+
+.card-right button {
+  background-color: #6366F1;
+  color: #ffffff;
+  border: none;
+  height: 52px;
+  padding: 0 32px;
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+  .subscribe-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .card-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+  }
+
+  .card-right {
+    width: 100%;
+  }
+   
+}
+
+body:has(input[type="checkbox"]:checked) #subscribe .subscribe-card {
+  background-color: var(--gray-900) !important;
+  border: 1px solid var(--gray-800) !important;
+}
+
+body:has(input[type="checkbox"]:checked) #subscribe h4 {
+  color: var(--white) !important;
+}
+
+body:has(input[type="checkbox"]:checked) #subscribe input {
+  color: var(--white) !important;
+  background-color: transparent !important;
+}
 /* **************************App features***************************** */
 
 
