@@ -419,3 +419,188 @@ body:has(input[type="checkbox"]:checked) #subscribe input {
   color: var(--white) !important;
   background-color: transparent !important;
 }
+/* **************************App features***************************** */
+
+
+
+.features {
+    text-align: center; 
+    padding-block: var(--section-spacing);
+
+    .iphone {
+        margin-top: 125px; 
+        display: none;
+    }
+
+    h2 {
+          font-size: 40px;
+          color: var(--gray-900);
+          margin-bottom: 12px;
+          font-weight: bold;
+      }
+
+      .text-feature {
+          color: var(--gray-600);
+          font-size: 18px;
+          line-height: 1.6;
+      }
+    .features-grid {
+        display: grid;
+         gap: 2rem;    
+        margin-top: 4rem; 
+    }
+    .feature-box {
+        display: flex;
+        text-align: start;
+        gap: 1rem;
+        align-items: flex-start;
+
+    }
+   .card-title {
+        font-size: 20px;
+        color: var(--gray-900);
+        margin-bottom: 5px;
+    }
+
+    .feature-box p {
+        color: var(--gray-700);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .icon-container {
+        background-color: var(--brand-soft);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        flex-shrink: 0;
+    }
+
+    @media (width > 768px) {
+        .features-grid{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem 3rem;
+        }
+    }
+
+    @media (width > 1200px) {
+        text-align: start;
+        .container {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+        .iphone {
+            display: block;
+
+        }
+        .app-features{
+            flex: 1;
+        }
+    }
+    @media (width > 1400px) {
+        text-align: start;
+        .container {
+            gap: 10rem;
+        }
+        
+    }
+
+}
+/* ============================
+  Hero Section
+  ============================ */
+.hero {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding-top: 60px;
+   padding-bottom: 40px;
+   gap: 40px;
+   flex-wrap: wrap;
+}
+.hero-content {
+   flex: 1;
+   min-width: 300px;
+   max-width: 500px;
+}
+.hero-content h1 {
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+}
+.hero-content p {
+   color: #666;
+   margin-bottom: 30px;
+}
+.download-buttons {
+
+   display: flex;
+
+   gap: 12px;
+
+   flex-wrap: wrap;
+
+}
+
+
+
+.hero-images {
+
+
+   position: relative;
+   flex: 1;
+
+   display: flex;
+
+   justify-content: flex-end;
+
+   align-items: flex-end;
+  
+
+   min-height: 520px;
+  
+
+}
+
+.phone-small {
+
+   position: absolute;
+
+   right: 220px;
+
+   bottom: 0px;
+
+   width: 250px;
+
+
+   height: auto;
+
+   z-index: 1;
+   padding-right: 0px;
+
+}
+
+.phone-large {
+
+   position: relative;
+   right: 0;
+   bottom: 0px;
+
+   width: 330;
+   max-width: 320px;
+
+   height: auto;
+
+   z-index: 2;
+
+}
+ 
+
+.store-btn {
+  display: inline-block;
+}
+
+.store-btn img {
+  height: 44px;   
+  width: auto;
+  display: block;
+}
