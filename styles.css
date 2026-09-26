@@ -735,6 +735,19 @@ background: var(--white);
 font-family: var(--font);
 }
 
+body:has(input[type="checkbox"]:checked) .money-transfer-features {
+  background-color: var(--gray-900) !important;
+}
+
+body:has(input[type="checkbox"]:checked) .money-transfer-features .af-text h2 {
+  color: var(--white) !important;
+}
+
+body:has(input[type="checkbox"]:checked) .money-transfer-features .af-list,
+body:has(input[type="checkbox"]:checked) .money-transfer-features .af-feature p {
+  color: var(--gray-400) !important;
+}
+
 .af-container {
 max-width: 1100px;
 margin: 0 auto;
